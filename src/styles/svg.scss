@@ -1,0 +1,102 @@
+@import "./variables";
+
+.dark {
+  .desktop-screen {
+    stroke: $light;
+  }
+  .mobile-border {
+    fill: $light;
+  }
+}
+
+svg.landingSVG {
+  animation: slideUp 2s;
+}
+
+@keyframes slideUp {
+  from {
+    fill-opacity: 0;
+    margin-top: 120px;
+  }
+  to {
+    fill-opacity: 1;
+    margin: 0;
+  }
+}
+
+.land-circle-back {
+  fill: black;
+}
+
+.left-shade {
+  fill: $grey;
+  animation: grayScale1 infinite 5s;
+}
+
+.right-shade {
+  fill: $slate;
+  animation: grayScale2 infinite 5s;
+}
+
+@keyframes grayScale1 {
+  from {
+    fill: $grey;
+  }
+  50% {
+    fill: $slate;
+  }
+  to {
+    fill: $grey;
+  }
+}
+
+@keyframes grayScale2 {
+  from {
+    fill: $slate;
+  }
+  50% {
+    fill: $grey;
+  }
+  to {
+    fill: $slate;
+  }
+}
+
+.chevron-left {
+  fill: $secondary;
+}
+
+.chevron-right {
+  fill: $primary;
+}
+
+.mobile-border {
+  fill: $grey;
+}
+
+.mobile-screen {
+  fill: $blue;
+}
+
+.mobile-swipe {
+  fill: black;
+}
+
+.svgText {
+  fill: $secondary;
+  filter: url(#white-shadow);
+  transform: scale(2, -2) translate(0, -100);
+}
+
+.desktop-screen {
+  fill: $blue;
+  stroke: $grey;
+}
+
+.desktop-stand {
+  fill: gray;
+}
+
+.footer-svg {
+  fill: $primary;
+}

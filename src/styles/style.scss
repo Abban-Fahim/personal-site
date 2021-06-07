@@ -1,0 +1,71 @@
+@import "./variables";
+
+.dark {
+  background-color: $grey;
+  h2,
+  h3 {
+    color: $light;
+  }
+  header {
+    background-color: $grey;
+    h1 {
+      color: $light;
+      transform: rotate(180deg);
+    }
+  }
+  .btn {
+    color: $light;
+  }
+}
+
+.btn-plain {
+  color: $grey;
+}
+
+h1,
+h1 span {
+  font-family: "Major Mono Display", monospace;
+  font-size: 66px;
+  text-align: center;
+  transition-duration: 0.5s;
+  transform: rotate(360deg);
+}
+
+h2 {
+  font-family: "Comic Neue";
+  font-size: 55px;
+}
+
+header {
+  background-color: $light;
+  position: sticky;
+  h1 {
+    font-size: 90px;
+    text-shadow: 0 0 5px $shadow;
+  }
+}
+
+.side-menu {
+  position: absolute;
+  background-color: #efefef99;
+  width: 100vw;
+  height: 100vh;
+  left: -100vw;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  display: flex;
+  z-index: 10000;
+  h1 {
+    border-bottom: 2px $grey solid;
+    align-self: center;
+    padding: 50px;
+  }
+}
+
+.side-menu.isVisible {
+  left: 0;
+}
+
+.intro {
+  margin-top: 20px;
+}

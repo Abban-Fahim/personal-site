@@ -1,0 +1,24 @@
+@import "./variables";
+
+$theme-colors: (
+  "primary": $primary,
+  "success": $success,
+  "danger": $danger,
+  "secondary": $secondary,
+  "light": $light,
+  "shadow": $shadow,
+  "plain": transparent,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 880px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$btn-border-radius: 3000px;
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
