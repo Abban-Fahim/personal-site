@@ -13,9 +13,9 @@ const SideMenu = ({sideBar, setSideBar, ...props}) => {
       </button>
       {urls.map((url) => {
         return (
-          <Link href={url.toLowerCase()}><h1 onClick={() => setSideBar(false)}>
-          {url}
-        </h1></Link>
+          <Link key={url} href={url.toLowerCase()}>
+            <h1 onClick={() => setSideBar(false)}>{url}</h1>
+          </Link>
         );
       })}
     </div>

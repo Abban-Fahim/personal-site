@@ -16,7 +16,7 @@ const Page = () => {
         <h1>My <span className="gradient">A</span>pplication</h1>
         <div className="grid">
             {testArray.map((item)=>{
-                return <BoxListItem {...item} />
+                return <BoxListItem {...item} key={item.title} />
             })}
             <div className="item"></div>
             <div className="item"></div>

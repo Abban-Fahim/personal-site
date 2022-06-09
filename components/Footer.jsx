@@ -14,18 +14,18 @@ const Footer = () => {
             id="gradient-fill"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#ffb800" />
-            <stop offset="0.09090909090909091" stop-color="#ffb611" />
-            <stop offset="0.18181818181818182" stop-color="#ffaf2c" />
-            <stop offset="0.2727272727272727" stop-color="#ffa649" />
-            <stop offset="0.36363636363636365" stop-color="#ff9d68" />
-            <stop offset="0.4545454545454546" stop-color="#ff978a" />
-            <stop offset="0.5454545454545454" stop-color="#ff97ac" />
-            <stop offset="0.6363636363636364" stop-color="#ff9cca" />
-            <stop offset="0.7272727272727273" stop-color="#ffa4e1" />
-            <stop offset="0.8181818181818182" stop-color="#ffabf0" />
-            <stop offset="0.9090909090909092" stop-color="#feb0f7" />
-            <stop offset="1" stop-color="#fab2fa" />
+            <stop offset="0" stopColor="#ffb800" />
+            <stop offset="0.09090909090909091" stopColor="#ffb611" />
+            <stop offset="0.18181818181818182" stopColor="#ffaf2c" />
+            <stop offset="0.2727272727272727" stopColor="#ffa649" />
+            <stop offset="0.36363636363636365" stopColor="#ff9d68" />
+            <stop offset="0.4545454545454546" stopColor="#ff978a" />
+            <stop offset="0.5454545454545454" stopColor="#ff97ac" />
+            <stop offset="0.6363636363636364" stopColor="#ff9cca" />
+            <stop offset="0.7272727272727273" stopColor="#ffa4e1" />
+            <stop offset="0.8181818181818182" stopColor="#ffabf0" />
+            <stop offset="0.9090909090909092" stopColor="#feb0f7" />
+            <stop offset="1" stopColor="#fab2fa" />
           </linearGradient>
         </defs>
         <path
