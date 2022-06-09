@@ -4,8 +4,7 @@ import { useState } from "react";
 const BoxListItem = ({img, title, desc, links}) => {
     const [hovering, setHovering] = useState(false);
 
-    return <div 
-    className="item" 
+    return <div className="item" 
     onMouseEnter={()=>setHovering(true)} 
     onMouseLeave={()=>setHovering(false)}
     style={hovering?{background: "linear-gradient("+String(Math.random()*360) + "deg, #ffb800, #fab2fa"}:null}>

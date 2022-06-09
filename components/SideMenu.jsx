@@ -5,7 +5,8 @@ const SideMenu = ({sideBar, setSideBar, ...props}) => {
   return (
     <div className={`side-menu ${sideBar ? " visible" : ""}`}>
       <button
-        style={{ position: "absolute", top: "35px", right: "30px", zIndex:"20" }}
+        className="icon"
+        style={{ position: "absolute", top: "35px", left: "30px", zIndex:"20" }}
         onClick={() => setSideBar(false)}
       >
         <i className="bi bi-x-lg" />

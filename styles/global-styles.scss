@@ -132,7 +132,7 @@ header {
 .gradient{
   @include gradient-text($primary-gradient);
 }
-a.icon{
+.icon{
   padding: $p;
   color: inherit;
   border-radius: $br;
