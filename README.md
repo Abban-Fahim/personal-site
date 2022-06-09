@@ -1,5 +1,5 @@
-My personal site
+### My personal site
 
-yet to be published
+Still in progress, check it out here: https://abban-fahim.herokuapp.com/
 
 Built with Next.js
