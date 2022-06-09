@@ -1,0 +1,20 @@
+$primary: #ffb800;
+$success: #96eb0f;
+$danger: #dc3545;
+$secondary: #fab2fa;
+$light: #efefef;
+$shadow: #cac8bd50;
+$grey: #303030;
+$glass-pane: #55555555;
+$slate: #575454;
+$blue: #52b1b1;
+$p: 14px;
+$br: 8px;
+
+$primary-gradient: linear-gradient(to right, $primary, $secondary);
+
+@mixin gradient-text($gradient) {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: $gradient;
+}

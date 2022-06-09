@@ -1,0 +1,24 @@
+import Link from "next/link";
+const urls = ["Apps", "Music", "Art"];
+
+const SideMenu = ({sideBar, setSideBar, ...props}) => {
+  return (
+    <div className={`side-menu ${sideBar ? " visible" : ""}`}>
+      <button
+        style={{ position: "absolute", top: "35px", right: "30px", zIndex:"20" }}
+        onClick={() => setSideBar(false)}
+      >
+        <i className="bi bi-x-lg" />
+      </button>
+      {urls.map((url) => {
+        return (
+          <Link href={url.toLowerCase()}><h1 onClick={() => setSideBar(false)}>
+          {url}
+        </h1></Link>
+        );
+      })}
+    </div>
+  );
+};
+
+export default SideMenu;

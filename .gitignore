@@ -1,0 +1,11 @@
+/node_modules
+/old-react-components
+# testing
+/coverage
+# next.js
+/.next/
+/out/
+# production
+/build
+# local env files
+.env*.local
