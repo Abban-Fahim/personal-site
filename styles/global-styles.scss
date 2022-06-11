@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Comfortaa&family=Major+Mono+Display&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css');
 
+html{scrollbar-color: $primary $glass-pane;}
 body{margin: 0; padding: 0;}
+::-webkit-scrollbar{background-color: $secondary; width: $br;}
+::-webkit-scrollbar-thumb{background-color: $primary; border-radius: $br;}
 
 // Text styles
 h1 {
@@ -14,10 +17,12 @@ h1 {
   transform: rotate(360deg);
 }
 h2 {
-  font-family: "Comic Neue";
+  font-family: "Comic Neue", sans-serif,;
   font-size: 55px;
   font-weight: normal;
 }
+h3{font-family: "Comic Neue", sans-serif;}
+p{font-family: 'Comfortaa', sans-serif;}
 
 // Base component styles
 button{
@@ -28,9 +33,7 @@ button{
   padding: $p;
   font-size: 28px;
 }
-button:hover, button:active{
-  background-color: $glass-pane;
-}
+button:hover, button:active{background-color: $glass-pane;}
 
 // Dark mode and page layout styles
 .dark {
@@ -58,24 +61,21 @@ button:hover, button:active{
 footer {
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .socials {
   a {
     color: $grey;
-    margin: 0 40px;
     text-decoration: none;
     font-size: 34px;
     &:hover {
       color: $primary;
     }
   }
-  display: flex;
+  padding: $p;
   bottom: 1vw;
   position: absolute;
-  right: 50%;
-  left: 50%;
-  align-items: center;
-  justify-content: center;
 }
 header {
   background-color: $light;
@@ -88,6 +88,7 @@ header {
   }
 }
 .side-menu {
+  overflow: hidden;
   position: absolute;
   background-color: #efefef99;
   width: 100vw;
