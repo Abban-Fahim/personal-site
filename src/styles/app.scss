@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Major+Mono+Display&family=Mada&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+@font-face {
+  font-family: "Iosevka Etoile";
+  src: url(./../components/iosevka-etoile-regular.ttf);
+}
+
+$grey: #2b1f31;
+$primary: #5fb9b0;
+$secondary: #bef992;
+$comp: #413d65;
+$light: #efefef;
+$shadow: #cac8bd50;
+$glass-pane: #55555555;
+$p: 14px;
+$br: 4px;
+
+::selection {
+  background: $primary;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-around;
+  padding: $p;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: $p;
+  background-color: $glass-pane;
+  border-radius: $br;
+  img {
+    border-radius: $br;
+  }
+  margin: 12px 0;
+  width: 25%;
+  transition-duration: 0.3s;
+  &:hover {
+    scale: 1.05;
+    box-shadow: $shadow 0 0 30px $br;
+    background: $comp top/10% url("./../components/brick-wall.png");
+  }
+}
+
+strong {
+  color: $secondary;
+}
+
+// Media queries
+@media (max-width: 900px) {
+  // ipad devices
+  .item {
+    width: 33%;
+  }
+}
+@media (max-width: 654px) {
+  // mobile devices
+  .item {
+    width: 80%;
+  }
+}

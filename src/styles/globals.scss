@@ -1,0 +1,59 @@
+@import "./app.scss";
+
+body {
+  background-color: $grey;
+  color: $light;
+  font-family: Comfortaa, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Iosevka Etoile", Mada, serif;
+}
+
+h1 {
+  font-size: calc(2.5vw + 30px);
+}
+h2 {
+  font-size: calc(2vw + 30px);
+}
+h3 {
+  font-size: calc(1.5vw + 32px);
+}
+h4 {
+  font-size: calc(1vw + 20px);
+}
+h5 {
+  font-size: calc(0.5vw + 18px);
+}
+h6,
+p {
+  font-size: calc(15px + 0.390625vw);
+}
+
+a {
+  color: $secondary;
+  transition: 0.3s;
+  display: inline-block;
+  &:hover {
+    transform: scale(1.07, 1.07);
+    background-color: $glass-pane;
+  }
+}
+
+header {
+  border-bottom: 12px $comp groove;
+  display: flex;
+  align-items: center;
+  #logo {
+    flex: 1;
+  }
+  a {
+    padding: $p;
+    border-radius: $br;
+  }
+}
