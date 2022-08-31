@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 16.933333 16.933333"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient15335">
+      <stop
+         style="stop-color:#52b1b1;stop-opacity:0.78024191"
+         offset="0"
+         id="stop15331" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="1"
+         id="stop15333" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient13987">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0"
+         id="stop13983" />
+      <stop
+         style="stop-color:#ffb800;stop-opacity:1"
+         offset="1"
+         id="stop13985" />
+    </linearGradient>
+    <radialGradient
+       xlink:href="#linearGradient13987"
+       id="radialGradient13999"
+       cx="6.4856868"
+       cy="5.1231499"
+       fx="6.4856868"
+       fy="5.1231499"
+       r="2.9053245"
+       gradientTransform="matrix(2.7270283,0.4571516,-0.45798601,2.7320058,-8.8546336,-10.985395)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient15335"
+       id="linearGradient15337"
+       x1="4.056324"
+       y1="7.9231372"
+       x2="11.878992"
+       y2="3.0769835"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Iosevka Etoile';-inkscape-font-specification:'Iosevka Etoile, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:8.66103;fill:url(#linearGradient15337);fill-opacity:1;stroke:url(#radialGradient13999);stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="3.2884614"
+       y="6.7932692"
+       id="text1376"
+       transform="matrix(1.511029,0,0,1.511029,-1.3007041,4.0787795)"><tspan
+         x="3.2884614"
+         y="6.7932692"
+         id="tspan16651">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="12.374999"
+       y="11.725962"
+       id="text12296"><tspan
+         id="tspan12294"
+         style="stroke-width:0.264583"
+         x="12.374999"
+         y="11.725962" /></text>
+  </g>
+</svg>
