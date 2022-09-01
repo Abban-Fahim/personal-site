@@ -4,6 +4,7 @@ body {
   background-color: $grey;
   color: $light;
   font-family: Comfortaa, sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -40,14 +41,27 @@ a {
   transition: 0.3s;
   display: inline-block;
   &:hover {
-    transform: scale(1.07, 1.07);
+    transform: scale(1.07);
     background-color: $glass-pane;
+  }
+}
+
+button {
+  background-color: $glass-pane;
+  border: none;
+  font-size: 24px;
+  transition: 0.3s;
+  &:active,
+  &:hover {
+    transform: scale(1.07);
+    border: $comp 4px solid;
   }
 }
 
 header {
   border-bottom: 12px $comp groove;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   #logo {
     flex: 1;

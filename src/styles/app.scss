@@ -60,4 +60,34 @@ strong {
   .item {
     width: 80%;
   }
+  header {
+    flex-direction: column;
+    transition: 0.4s;
+  }
+  nav {
+    width: 100%;
+    transition: 0.4s;
+    & > a {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  nav.hidden {
+    display: none;
+  }
+  #collapser {
+    color: $secondary;
+    position: absolute;
+    top: $p;
+    right: $p;
+    transform: none;
+    border-radius: $br;
+    i {
+      transition: 0.3s;
+    }
+  }
+  .bi-plus.hidden {
+    transform: rotate(45deg);
+    display: inline-block;
+  }
 }
