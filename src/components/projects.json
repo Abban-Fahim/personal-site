@@ -14,7 +14,7 @@
       "title": "EZ MCQs",
       "desc": "A little app to help you prepare for the IGCSE Science MCQs",
       "links": [
-        { "type": "globe", "link": "https://ez-mcq.herokuapp.com" },
+        { "type": "globe", "link": "https://kzdtp9.deta.dev/" },
         { "type": "github", "link": "https://github.com/Abban-Fahim/MCQ" }
       ]
     }

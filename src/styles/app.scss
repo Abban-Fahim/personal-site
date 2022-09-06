@@ -48,6 +48,10 @@ strong {
   color: $secondary;
 }
 
+#collapser {
+  display: none;
+}
+
 // Media queries
 @media (max-width: 900px) {
   // ipad devices
@@ -78,6 +82,7 @@ strong {
   #collapser {
     color: $secondary;
     position: absolute;
+    display: block;
     top: $p;
     right: $p;
     transform: none;
