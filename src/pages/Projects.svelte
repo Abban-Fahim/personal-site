@@ -1,11 +1,11 @@
 <script>
-  import projectDetails from "../components/projects.json";
+  import { projects } from "../components/data";
 </script>
 
 <main>
   <h3>Web related projects</h3>
   <div class="grid">
-    {#each projectDetails.web as project}
+    {#each projects as project}
       <div class="item">
         <h5>{project.title}</h5>
         <p>{project.desc}</p>

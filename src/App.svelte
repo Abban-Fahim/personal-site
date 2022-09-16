@@ -17,7 +17,7 @@
 
 <Router basepath="/personal-site">
   <header>
-    <Link to="/" id="logo"><img src={Logo} alt="Logo" /></Link>
+    <Link to="/" id="logo"><img src={Logo} width={64} alt="Logo" /></Link>
     <button type="button" id="collapser" on:click={toggleNav}
       ><i bind:this={navIcon} class="bi bi-plus hidden" /></button
     >

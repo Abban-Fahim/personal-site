@@ -31,9 +31,6 @@ $br: 4px;
   padding: $p;
   background-color: $glass-pane;
   border-radius: $br;
-  img {
-    border-radius: $br;
-  }
   margin: 12px 0;
   width: 25%;
   transition-duration: 0.3s;
@@ -47,9 +44,29 @@ $br: 4px;
 strong {
   color: $secondary;
 }
+.secondary {
+  color: $comp;
+}
+
+.big-pad {
+  padding: 12px calc(6px + 3.6vw);
+}
+
+.waterfall {
+  padding: 0 8px;
+  strong {
+    border-top: $primary 4px solid;
+    border-bottom: $primary 4px solid;
+  }
+}
 
 #collapser {
   display: none;
+}
+
+.flexCentred {
+  display: flex;
+  align-items: center;
 }
 
 // Media queries
