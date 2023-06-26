@@ -15,16 +15,16 @@
   }
 </script>
 
-<Router basepath="/personal-site">
+<Router>
   <header>
-    <Link to="/" id="logo"><img src={Logo} width={64} alt="Logo" /></Link>
-    <button type="button" id="collapser" on:click={toggleNav}
-      ><i bind:this={navIcon} class="bi bi-plus hidden" /></button
-    >
-    <nav bind:this={navElement}>
+    <Link to="/" id="logo"><img src={Logo} width="128" alt="Logo" /></Link>
+    <button type="button" id="collapser" on:click={toggleNav}>
+      <i bind:this={navIcon} class="bi bi-plus" />
+    </button>
+    <nav bind:this={navElement} class="hidden">
       <Link to="work">My projects</Link>
       <Link to="contact">Contact</Link>
-      <a target="__blank" href="https://abban-fahim.github.io/blog/">My Blog</a>
+      <a target="__blank" href="https://blog.abbanf.tech/">My Blog</a>
       <div>
         <a target="__blank" href="https://github.com/Abban-Fahim/"><i class="bi bi-github" /></a>
         <a target="__blank" href="https://www.instagram.com/abbanfahim__/"><i class="bi bi-instagram" /></a>

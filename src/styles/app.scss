@@ -62,11 +62,13 @@ strong {
 
 #collapser {
   display: none;
+  font-size: 40px;
 }
 
 .flexCentred {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 // Media queries

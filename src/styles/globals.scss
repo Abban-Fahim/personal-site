@@ -58,6 +58,13 @@ button {
   }
 }
 
+img {
+    display: block; 
+    margin: 0 auto; 
+    width:30vw; 
+    image-rendering: pixelated;
+}
+
 header {
   border-bottom: 12px $comp groove;
   display: flex;
