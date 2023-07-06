@@ -72,6 +72,10 @@ header {
   align-items: center;
   #logo {
     flex: 1;
+    img{
+        display: inline !important;
+        width: 150px;
+    }
     &:hover {
       border: 4px solid $comp;
       transform: none;
