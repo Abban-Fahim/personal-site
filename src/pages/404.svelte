@@ -5,6 +5,11 @@
 
 <main>
     <img src={Face} alt="hmmmmm.png" />
+    <h1><strong>Error 404</strong></h1>
     <h1>How'd you end up here?</h1>
-    <h2>Go find something that actually <Link to="/">exists</Link></h2>
+    <h2>
+        Report a missing page <a
+            href="https://github.com/Abban-Fahim/personal-site/issues">here</a
+        >
+    </h2>
 </main>

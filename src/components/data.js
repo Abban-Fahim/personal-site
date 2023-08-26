@@ -26,8 +26,7 @@ export const whatILike = [
     "baking cupcakes",
     "being a nerd",
     "helping people",
-    "making terrible jokes",
     "setting ambitious goals",
     "socialism ☭",
-    "playing video-games",
+    "video-games",
 ];

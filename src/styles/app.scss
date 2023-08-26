@@ -6,13 +6,13 @@
   src: url(./../components/iosevka-etoile-regular.ttf);
 }
 
-$grey: #2b1f31;
-$primary: #5fb9b0;
-$secondary: #bef992;
-$comp: #413d65;
-$light: #efefef;
-$shadow: #cac8bd50;
-$glass-pane: #55555555;
+$bg: #2e2a31;
+$primary: #796af5;
+$secondary: #17ad98;
+$comp: #bb60ea;
+$light: #f5f4f7;
+$shadow: #4a464d50;
+$glass-pane: #bcbabe55;
 $p: 14px;
 $br: 4px;
 
@@ -37,15 +37,20 @@ $br: 4px;
   &:hover {
     scale: 1.05;
     box-shadow: $shadow 0 0 30px $br;
-    background: $comp top/10% url("./../components/brick-wall.png");
+    background: $primary top/10% url("./../components/brick-wall.png");
   }
 }
 
-strong {
-  color: $secondary;
+#logo {
+  img{
+      display: inline !important;
+      width: 150px; 
+  }
 }
-.secondary {
-  color: $comp;
+
+
+strong {
+  color: $secondary !important;
 }
 
 .big-pad {
@@ -53,11 +58,18 @@ strong {
 }
 
 .waterfall {
+  color: $glass-pane;
   padding: 0 8px;
   strong {
     border-top: $primary 4px solid;
     border-bottom: $primary 4px solid;
   }
+}
+
+#details{
+    color: $glass-pane;
+    display: flex;
+    justify-content: center;
 }
 
 #collapser {
