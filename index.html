@@ -1,39 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abban The Nerd</title>
-    <script type="module" crossorigin src="/assets/index.be66eab5.js"></script>
-    <link rel="stylesheet" href="/assets/index.fdf0e18f.css">
-  </head>
-  <body>
-    <div id="app"></div>
-    <script>
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
-      (function (l) {
-        if (l.search[1] === "/") {
-          var decoded = l.search
-            .slice(1)
-            .split("&")
-            .map(function (s) {
-              return s.replace(/~and~/g, "&");
-            })
-            .join("?");
-          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
-        }
-      })(window.location);
-    </script>
-    
-  </body>
-</html>
+<head>
+    <meta charset="utf8">
+<link rel="stylesheet" href="/_astro/_...slug_.77b04a5f.css" /></head>
+<style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var d;{let p={0:t=>u(t),1:t=>l(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(l(t)),5:t=>new Set(l(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},h=t=>{let[e,n]=t;return e in p?p[e](n):void 0},l=t=>t.map(h),u=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,n])=>[e,h(n)]));customElements.get("astro-island")||customElements.define("astro-island",(d=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=async()=>{var i;if(!this.hydrator||!this.isConnected)return;let e=(i=this.parentElement)==null?void 0:i.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),o={},a=this.querySelectorAll("template[data-astro-template]");for(let r of a){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(o[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of n){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(o[r.getAttribute("name")||"default"]=r.innerHTML)}let c;try{c=this.hasAttribute("props")?u(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",y=this.getAttribute("component-export");throw y&&(s+=` (export ${y})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}await this.hydrator(this)(this.Component,c,o,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((e,n)=>{n.disconnect(),setTimeout(()=>this.childrenConnectedCallback(),0)}).observe(this,{childList:!0})}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}Astro[n](async()=>{let o=this.getAttribute("renderer-url"),[a,{default:c}]=await Promise.all([import(this.getAttribute("component-url")),o?import(o):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(let r of i.split("."))this.Component=this.Component[r]}return this.hydrator=c,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},d.observedAttributes=["props"],d))}})();</script><astro-island uid="Z1Ls4iu" component-url="/_astro/Index.e1ac7f85.js" component-export="default" renderer-url="/_astro/client.cb726945.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Index&quot;,&quot;value&quot;:true}" await-children=""><header><a id="logo" href="/"><img src="/m-abban.png" width="128" alt="Logo"></a>
+    <button type="button" id="collapser"><i class="bi bi-plus"></i></button>
+    <nav class="hidden"><a href="/projects">projects</a>
+        <a href="/blog">blog</a>
+        <div><a target="__blank" href="https://github.com/Abban-Fahim/"><i class="bi bi-github"></i></a>
+            <a target="__blank" href="https://www.instagram.com/abbanfahim__/"><i class="bi bi-instagram"></i></a>
+            <a target="__blank" href="https://www.linkedin.com/in/abban-fahim/"><i class="bi bi-linkedin"></i></a></div></nav></header>
+<astro-slot>
+    <astro-island uid="ZPv3uL" component-url="/_astro/Home.6de984a1.js" component-export="default" renderer-url="/_astro/client.cb726945.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Home&quot;,&quot;value&quot;:true}" await-children=""><main><h1>Hi there!</h1>
+    <h2>I&#39;m <strong>Abban Fahim</strong></h2>
+    <h2 dir="rtl">اسمي <strong>ابان فهيم</strong></h2>
+    <h4 class="flexCentred big-pad">I&#39;m a <div class="waterfall" style="width: 6.666666666666667ch;"><p><strong>cloistered</strong>
+      </p><p class="secondary">clumsy
+      </p><p class="secondary">cautious
+      </p><p class="secondary">crabby
+      </p><p class="secondary">cool
+      </p><p class="secondary">c*nty
+      </p><p class="secondary">crappy
+      </p><p class="secondary">chill
+      </p></div> coder
+    </h4>
+    <h4 class="flexCentred big-pad" style="justify-content: flex-end;">I also like
+        <div class="waterfall" style="width: 15.333333333333334ch;"><p><strong>producing music</strong>
+      </p><p class="secondary">baking cupcakes
+      </p><p class="secondary">being a nerd
+      </p><p class="secondary">helping people
+      </p><p class="secondary">setting ambitious goals
+      </p><p class="secondary">socialism ☭
+      </p><p class="secondary">video-games
+      </p></div></h4>
+    <div class="flexCentred" style="justify-content: space-around;"><h4>I&#39;m a Robotics Engineer</h4></div>
+    <div class="flexCentred" style="justify-content: space-around;"><h4>And a founder of <strong><a href="https://bruh-corp.github.io/">Bruh Corp.</a></strong></h4>
+        <img src="/bru.gif" alt="Gif of Bruh Corp logo"></div></main></astro-island>
+</astro-slot></astro-island>
