@@ -1,0 +1,23 @@
+---
+import Index from "./../components/Index.svelte";
+import CommonHead from "./../components/CommonHead.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog");
+---
+
+<CommonHead title="Blog posts" desc="This is a collection of all my written work and other thoughts" />
+<Index client:load>
+  <article>
+    <h3>All posts</h3>
+    {
+      allPosts.map((post) => {
+        return (
+          <a href={"/blog/" + post.slug}>
+            {post.data.title} -- {post.data.date}
+          </a>
+        );
+      })
+    }
+  </article>
+</Index>

@@ -4,10 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite --host",
-    "build": "vite build",
-    "preview": "vite preview --host",
-    "deploy": "vite build && gh-pages -d dist"
+    "start": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview --host"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
@@ -17,6 +16,8 @@
     "vite": "^3.0.7"
   },
   "dependencies": {
+    "@astrojs/svelte": "^3.1.1",
+    "astro": "^2.10.14",
     "svelte-routing": "^1.6.0"
   }
 }

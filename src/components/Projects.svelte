@@ -1,5 +1,6 @@
 <script>
-  import { projects } from "../components/data";
+  import "./../styles/generic.scss";
+  import { projects } from "./data";
 </script>
 
 <main>

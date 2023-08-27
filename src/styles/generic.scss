@@ -1,9 +1,16 @@
 @import "./app.scss";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Vazirmatn&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+@font-face {
+  font-family: "Iosevka Etoile";
+  src: url(./../components/iosevka-etoile-regular.ttf);
+}
 
 body {
   background-color: $bg;
   color: $light;
-  font-family: Comfortaa, sans-serif;
+  font-family: Comfortaa, Vazirmatn, sans-serif;
   overflow-x: hidden;
   padding: 12px;
 }
@@ -14,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Iosevka Etoile", Mada, serif;
+  font-family: "Iosevka Etoile", Vazirmatn, serif;
 }
 
 h1 {
@@ -67,6 +74,10 @@ img {
     image-rendering: pixelated;
 }
 
+hr{
+    color: $primary;
+}
+
 header {
     width: fit-content;
     margin: 0 auto;
@@ -81,3 +92,4 @@ header {
         border-radius: $br;
     }
 }
+
