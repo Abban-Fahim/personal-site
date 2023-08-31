@@ -13,7 +13,7 @@ const allPosts = await getCollection("blog");
     {
       allPosts.map((post) => {
         return (
-          <a href={"/blog/" + post.slug}>
+        <a href={"/personal-site/blog/" + post.slug}>
             {post.data.title} -- {post.data.date}
           </a>
         );
