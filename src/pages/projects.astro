@@ -1,0 +1,10 @@
+---
+import Index from "./../components/Index.svelte";
+import CommonHead from "./../components/CommonHead.astro";
+import ProjectsPage from "./../components/Projects.svelte";
+---
+
+<CommonHead title="My projects" desc="A few of my projects, both in and outside of the computing world" />
+<Index client:load>
+  <ProjectsPage client:load />
+</Index>

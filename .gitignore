@@ -1,0 +1,10 @@
+.vscode
+
+node_modules/
+dist/
+dist-ssr
+*.local
+.astro
+
+Session.vim
+.obsidian/

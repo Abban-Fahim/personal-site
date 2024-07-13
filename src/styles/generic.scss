@@ -1,0 +1,105 @@
+@import "./app.scss";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Vazirmatn&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+@font-face {
+	font-family: "Iosevka Etoile";
+	src: url("/personal-site/iosevka-etoile-regular.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $bg;
+	color: $light;
+	font-family: Comfortaa, Vazirmatn, sans-serif;
+	overflow-x: hidden;
+	padding: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Iosevka Etoile", Vazirmatn, serif;
+	color: $light-ish;
+}
+
+h1 {
+	font-size: calc(2.5vw + 30px);
+	margin: 50px 0;
+}
+h2 {
+	font-size: calc(2vw + 30px);
+	margin: 50px 0;
+}
+h3 {
+	font-size: calc(1.5vw + 32px);
+	margin: 35px 0;
+}
+h4 {
+	font-size: calc(1vw + 20px);
+	margin: 20px 0;
+}
+h5 {
+	font-size: calc(0.5vw + 18px);
+}
+h6,
+p {
+	font-size: calc(15px + 0.390625vw);
+	line-height: 1.75;
+}
+
+a:not(#logo) {
+	color: $secondary;
+	transition: 0.3s;
+	display: inline-block;
+	text-decoration: none;
+	&:hover {
+		transform: scale(1.07);
+		background-color: $glass-pane;
+	}
+}
+
+button {
+	background-color: $glass-pane;
+	border: none;
+	font-size: 24px;
+	transition: 0.3s;
+	&:active,
+	&:hover {
+		transform: scale(1.07);
+		border: $comp 4px solid;
+	}
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	width: 30vw;
+	image-rendering: pixelated;
+}
+
+hr {
+	color: $primary;
+}
+
+header {
+	width: fit-content;
+	margin: 0 auto;
+	padding: 6px;
+	border-bottom: 12px $comp groove;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	a {
+		padding: $p;
+		border-radius: $br;
+	}
+}

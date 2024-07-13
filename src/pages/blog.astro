@@ -1,0 +1,42 @@
+---
+import Index from "./../components/Index.svelte";
+import CommonHead from "./../components/CommonHead.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog");
+---
+
+<CommonHead title="Blog posts" desc="This is a collection of all my written work and other thoughts" />
+<Index client:load>
+	<article>
+		<h3>All posts</h3>
+		{
+			allPosts
+				.sort((a, b) => {
+					return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+				})
+				.map((post) => {
+					return (
+						<a style="display: block;" href={"/personal-site/blog/" + post.slug}>
+							<p>
+								{post.data.title} -- {post.data.date}
+							</p>
+						</a>
+					);
+				})
+		}
+	</article>
+</Index>
+<footer>
+	<p xmlns:cc="http://creativecommons.org/ns#">
+		This work is licensed under <a
+			href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
+			target="_blank"
+			rel="license noopener noreferrer"
+			style="display:inline-block;"
+			>CC BY 4.0
+		</a>
+		<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" />
+		<img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" />
+	</p>
+</footer>
