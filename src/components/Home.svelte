@@ -34,7 +34,7 @@
 	</div>
 	
 	<div style="justify-content: space-around;">
-		<p>My research interests are in <strong>computer vision</strong> and <strong>reinforcement learning</strong>, specially when applied to control robots, and I'm excited in particular about neuromorphic computing and <strong>event cameras</strong>, which hold much untapped potential for the future of robotics.</p>
+		<p>My research interests are in <strong>computer vision</strong> and <strong>reinforcement learning</strong>, specially when applied to robot control, and I'm keen to explore in neuromorphic computing and <strong>event cameras</strong> in particular, which hold much potential for the future of effecient and agile robotics.</p>
 		<p>Outside of academic work and coding, I like to drink a lot of tea, read sometimes and compose some music.</p>
 	</div>
 
