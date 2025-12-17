@@ -23,7 +23,6 @@ $br: 4px;
 	font-size: 24px !important;
 }
 
-
 .graph_node {
 	fill: $bg-layer;
 }
@@ -61,7 +60,7 @@ main > div {
 	flex-wrap: wrap;
 }
 
-.item {
+.item, .pub {
 	padding: $p;
 	background-color: $glass-pane;
 	border-radius: $br;
@@ -73,12 +72,16 @@ main > div {
 	}
 	&:hover {
 		* {
-			color: $bg !important;
+			color: #000 !important;
 		}
 		scale: 1.05;
 		box-shadow: $shadow 0 0 30px $br;
-		background: $primary top/10% url("/brick-wall.png");
+		background: $primary top/3% url("/brick-wall.png");
 	}
+}
+
+.pub {
+	width: 80%;
 }
 
 #logo {

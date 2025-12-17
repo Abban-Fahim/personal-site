@@ -1,0 +1,33 @@
+---
+import Layout from "../components/Layout.astro";
+import { getCollection } from 'astro:content';
+const allPapers = (await getCollection('publications')).sort((a, b) => b.data.year - a.data.year);
+const years = [...new Set(allPapers.map(p => p.data.year))];
+---
+
+<Layout title="My publications" desc="">
+    <main>
+        <div>
+            <p>A comprehensive list of my publications and related resources, otherwise can be found on my <a href="https://scholar.google.com/citations?user=jt3GnGgAAAAJ&hl=en">scholar</a> and <a href="https://orcid.org/0009-0002-9619-7225">orcid</a> pages.</p>
+        </div>
+        {years.map(year => (
+            <div>
+                <h4>{year}</h4>
+                <div class="pub">
+                    {allPapers.filter(p => p.data.year === year).map(p => (
+                        //   <PublicationItem entry={paper} />
+                        <h5>{p.data.title}</h5>
+                        <p>{p.data.authors.join(", ")}</p>
+                        <p style="font-style: italic;">{p.data.venue}</p>
+                        <div>{["website", "pdf", "code", "video", "slides"].map(l => {
+                            let link = p.data.links[l];
+                            if (link !== "") {
+                                return <a href={link}>{l}</a>
+                            }
+                        })}</div>
+                    ))}
+                </div>
+            </div>
+        ))}
+    </main>
+</Layout>
