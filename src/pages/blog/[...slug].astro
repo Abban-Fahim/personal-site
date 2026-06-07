@@ -14,23 +14,29 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title={entry.data.title} desc="">
-	<h6 id="details">{entry.data.title} -- {entry.data.date}</h6>
-	<article>
-		<Content />
-	</article>
-
-	<footer>
-		<p xmlns:cc="http://creativecommons.org/ns#">
-			This work is licensed under <a
+<Layout title={entry.data.title}>
+	<main>
+		<div>
+			<p><a href="/blog">{"<"} back</a></p>
+			<h5 id="details">{entry.data.title} -- {entry.data.created.toISOString().split('T')[0]}</h6>
+			<h5 id="details">Last update: {entry.data.updated.toISOString().split('T')[0]}</h5>
+		</div>
+		<article>
+			<Content />
+		</article>
+		
+		<footer>
+			<p xmlns:cc="http://creativecommons.org/ns#">
+				This work is licensed under <a
 				href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
 				target="_blank"
 				rel="license noopener noreferrer"
 				style="display:inline-block;"
 				>CC BY 4.0
-			</a>
-			<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" />
-			<img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" />
-		</p>
-	</footer>
+				</a>
+				<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" />
+				<img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" />
+			</p>
+		</footer>
+	</main>
 </Layout>

@@ -33,15 +33,15 @@ const __dirname = path.dirname(__filename);
 
 const BIB_FILE = path.join(process.cwd(), 'src', 'components', 'publications.bib');
 const PUBLICATIONS_DIR = path.join(process.cwd(), 'src', 'content', 'publications');
-// const BOOKS_DIR = path.join(process.cwd(), 'src', 'content', 'books');
+const BOOKS_DIR = path.join(process.cwd(), 'src', 'content', 'books');
 
 // Ensure output directories exist
 if (!fs.existsSync(PUBLICATIONS_DIR)) {
   fs.mkdirSync(PUBLICATIONS_DIR, { recursive: true });
 }
-if (!fs.existsSync(BOOKS_DIR)) {
-  fs.mkdirSync(BOOKS_DIR, { recursive: true });
-}
+// if (!fs.existsSync(BOOKS_DIR)) {
+//   fs.mkdirSync(BOOKS_DIR, { recursive: true });
+// }
 
 // Helper to clean BibTeX strings (remove braces)
 function cleanString(str) {

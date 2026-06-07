@@ -19,9 +19,8 @@
 	<div class="flexCentred" style="justify-content: space-between;">
 		<div style="padding: 25px; width: 70vw;">
 			<h3>About me</h3>
-			<p>I'm <strong>Muhammad Abban</strong>, a student and aspiring engineer, hoping to make this world a better place with my skills.</p>
-			<p>I'm currently studying <strong>robotics</strong> at Heriot-Watt University, Dubai, due to graduate in the summer of 2026. I strive to bring together my childhood passions of game development, math and helping people, to explore and create new technology that can improve our lives. </p>
-			<!-- Aside from that, I also like learning about and working on less practical concepts to try pushing technology -->
+			<p>I'm <strong>Muhammad Abban</strong>, a student and aspiring researcher, hoping to improve this world a tiny bit with my skills and effort.</p>
+			<p>I completed my bachelor's in <strong>robotics</strong> at Heriot-Watt University, Dubai, in the spring of 2026, where I worked with <strong><a href="https://claudiozito.net/">Dr. Claudio Zito</a></strong> on grasp generation through probabilistic methods. For my honours thesis I worked on vision-based reinforcement learning for quadruped locomotion, supervise by <strong><a href="https://scholar.google.com/citations?hl=en&user=kLGaH8YAAAAJ">Dr. Nidhal Abdulaziz</a></strong>.</p>
 		</div>
 		<img src="/moi.jpg" alt="a pic of me outdoors, in some amazing weather" style="width: 280px; border: 12px #17ad98 groove;">
 	</div>
@@ -34,8 +33,8 @@
 	</div>
 	
 	<div style="justify-content: space-around;">
-		<p>My research interests are in <strong>computer vision</strong> and <strong>reinforcement learning</strong>, specially when applied to robot control, and I'm keen to explore in neuromorphic computing and <strong>event cameras</strong> in particular, which hold much potential for the future of effecient and agile robotics.</p>
-		<p>Outside of academic work and coding, I like to drink a lot of tea, read sometimes and compose some music.</p>
+		<p>My research interests revolve around applying <strong>neuromorphic computing</strong> to <strong>robot learning</strong> and <strong>computer vision</strong> to create more <strong>energy-effecient</strong> and <strong>intelligent</strong> systems.
+		<p>Outside of academic work, I like to drink a lot of tea, am passionate about open-source, and sometimes read and compose music.</p>
 	</div>
 
 	<!-- <h1>Hi there!</h1>

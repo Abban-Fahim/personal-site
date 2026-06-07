@@ -11,15 +11,15 @@ export const projects = [
 			},
 			{
 				title: "B.U.R.G.E.R",
-				desc: "Coming soon...",
+				desc: "An autonomous water debris collection robot, utilising cameras almost exclusively.",
 				links: [
-					{ type: "linkedin", link: "https://www.linkedin.com/posts/abu-dhabi-university_roboticscompetition-innovationchallenge-activity-7188491442758041601-AlAq/"}
+					{ type: "github", link: "https://github.com/Hamze-Hammami/AISV/" }
 				]
 			}
 		]
 	},
 	{
-		title: "Web projects",
+		title: "Web dev",
 		projs: [
 			{
 				img: "/notezzz.png",

@@ -7,17 +7,17 @@ const allPosts = await getCollection("blog");
 
 <Layout title="Blog posts" desc="This is a collection of all my written work and other thoughts">
 	<article>
-		<h3>All posts</h3>
+		<h4>All posts</h4>
 		{
 			allPosts
 				.sort((a, b) => {
-					return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+					return b.data.updated.getTime() - a.data.updated.getTime();
 				})
 				.map((post) => {
 					return (
 						<a style="display: block;" href={"/blog/" + post.slug}>
 							<p>
-								{post.data.title} -- {post.data.date}
+								{post.data.title} -- {post.data.updated.toISOString().split('T')[0]}
 							</p>
 						</a>
 					);

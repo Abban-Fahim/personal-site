@@ -13,9 +13,8 @@ const years = [...new Set(allPapers.map(p => p.data.year))];
         {years.map(year => (
             <div>
                 <h4>{year}</h4>
-                <div class="pub">
                     {allPapers.filter(p => p.data.year === year).map(p => (
-                        //   <PublicationItem entry={paper} />
+                    <div class="pub">
                         <h5>{p.data.title}</h5>
                         <p>{p.data.authors.join(", ")}</p>
                         <p style="font-style: italic;">{p.data.venue}</p>
@@ -25,8 +24,8 @@ const years = [...new Set(allPapers.map(p => p.data.year))];
                                 return <a href={link}>{l}</a>
                             }
                         })}</div>
+                    </div>
                     ))}
-                </div>
             </div>
         ))}
     </main>

@@ -1,6 +1,7 @@
 ---
 title: Hello!
-date: 4/9/2023
+created: 2023-09-04
+updated: 2023-09-04
 ---
 **hello world!**
 
